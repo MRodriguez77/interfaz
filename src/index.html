@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <br>
+        <div class="jumbotron">
+            <h1>
+                Consolas
+            </h1>
+
+            <div class="form-group">
+                <label for="carnet" class="col-sm-2 col-form-label">Ingrese el nombre: </label><br>
+                <input class="form-control" type="text" name="name" id="name">
+            </div>
+
+            <div class="form-group">
+                <label for="carnet" class="col-sm-2 col-form-label">Compañia: </label><br>
+                <input class="form-control" type="text" name="company" id="company">
+            </div>
+
+            <div class="form-group">
+                <label for="carnet" class="col-sm-2 col-form-label">Año de salida: </label><br>
+                <input class="form-control" type="text" name="year" id="year">
+            </div>
+
+            <div class="form-group">
+                <label for="carnet" class="col-sm-2 col-form-label">Precio de salida: </label><br>
+                <input class="form-control" type="text" name="price" id="price">
+            </div>
+
+            <div class="form-group">
+                <label for="schedule">Tipo de consola</label>
+                <select name="type_console" class="form-control" id="type_console">
+                    <option>Sobremesa</option>
+                    <option>Portatil</option>
+                    <option>Ambas</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <button type="button" class="btn btn-danger" id="submit_btn" >Ingresar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <section>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Compañia</th>
+                        <th scope="col">Año de salida</th>
+                        <th scope="col">Precio de salida</th>
+                        <th scope="col">tipo</th>
+                    </tr>
+                </thead>
+                <tbody id="table_body">
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+    <script src="scrip.js"></script>
+</html>
